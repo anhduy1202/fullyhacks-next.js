@@ -3,12 +3,15 @@ import React from "react";
 const Form = () => {
   return (
     <form action="">
-      <p>Name</p>
+      <p>Your name:</p>
       <input type="text" />
-      <p>Notes</p>
+      <p>Note title:</p>
       <input type="text" />
-      <p>Color</p>
+      <p>Note description:</p>
+      <input type="text" />
+      <p>Note color:</p>
       <input type="color" name="" id="" />
+      <button>Submit</button>
     </form>
   );
 };
