@@ -12,7 +12,6 @@ datasource db {
 
 model Note {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
-  content     String
   title       String
   author      String
   description String
