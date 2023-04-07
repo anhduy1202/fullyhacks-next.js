@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 
-const globalForPrisma = globa
+const globalForPrisma = global
 
 export const prisma =
   globalForPrisma.prisma ||
