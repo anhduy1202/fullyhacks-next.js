@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .layout {
+    @apply bg-orange-100 font-rubik text-lg my-8 mx-8 md:m-10 w-full mb-14
+  }
+  .btn {
+    @apply bg-sky-100 w-[40%] md:w-[10%] p-2 text-center rounded-lg hover:bg-sky-300 hover:ease-in-out hover:duration-200;
+  }
+  .note-container {
+    @apply flex flex-wrap justify-start gap-8
+  }
+  .note {
+    @apply rounded-lg p-4 text-lg w-[280px]
+  }
+}

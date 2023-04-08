@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const CreateNotePage = () => {
   return (
-    <div>create note</div>
-  )
-}
+    <div className="">
+      <p className="text-[4rem] font-bold"> Create my note </p>
+    </div>
+  );
+};
 
-export default CreateNotePage
+export default CreateNotePage;
