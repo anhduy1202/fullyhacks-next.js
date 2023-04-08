@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-sky-100 w-[10%] p-2 text-center rounded-lg hover:bg-sky-300 hover:ease-in-out hover:duration-200;
+  }
+  .note-container {
+    @apply grid md:grid-cols-4 justify-center gap-8
+  }
+  .note {
+    @apply rounded-lg p-4 text-lg
+  }
+}

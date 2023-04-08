@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Note from "./Note";
 
-const Notes = () => {
+const Notes = ({ notes }) => {
   return (
-    <div>Notes</div>
-  )
-}
+    <div className="note-container">
+      {notes.map((note) => {
+        return <Note key={note.id} note={note} />;
+      })}
+    </div>
+  );
+};
 
-export default Notes
+export default Notes;
