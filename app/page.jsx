@@ -4,10 +4,13 @@ import { useEffect, useState } from "react";
 import Notes from "./components/Notes/Notes";
 export default function Home() {
   const [notes, setNotes] = useState([]);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetchAllNotes = async () => {
+      setLoading(true);
       const res = await fetch("/api/notes");
       const data = await res.json();
+      setLoading(false);
       setNotes(data);
     };
     fetchAllNotes();
@@ -19,6 +22,7 @@ export default function Home() {
       <Link className="btn" href={"/create-note"}>
         Create your note
       </Link>
+      {loading && <p>Loading...</p>}
       <Notes notes={notes} />
     </section>
   );
