@@ -1,6 +1,8 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Form = () => {
+  const router = useRouter();
   return (
     <form action="">
       <p>Your name:</p>
@@ -11,7 +13,10 @@ const Form = () => {
       <input type="text" />
       <p>Note color:</p>
       <input type="color" name="" id="" />
-      <button>Submit</button>
+      <button type="submit">Submit</button>
+      <button type="button" className="btn" onClick={() => router.push("/")}>
+        Go back
+      </button>
     </form>
   );
 };
